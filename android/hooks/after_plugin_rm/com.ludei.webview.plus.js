@@ -39,7 +39,7 @@ App.prototype = {
                 if(error) throw new Error(stderr);
                 if(this.ctx.CORDOVA_CUSTOM_VERSION >= "3.5.0-0.1.0"){
                     var tmp_list = [];
-                    stdout.split("\\n").forEach(function(plugin_info){
+                    stdout.split("\n").forEach(function(plugin_info){
                         tmp_list.push(plugin_info.split(" ")[0]);
                     });
                     stdout = JSON.stringify(tmp_list);
